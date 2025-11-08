@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple calculator</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .calculator {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+      #display {
+        width: 95%;
+        height: 50px;
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: right;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        grid-gap: 10px;
+        justify-content: center;
+      }
+      .btn {
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        background-color: #eee;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn.operator {
+        background-color: #f9a825;
+        color: white;
+      }
+      #equals {
+        grid-column: span 4;
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" /disabled>
+      <div class="buttons">
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn operator">/</button>
+
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn operator">*</button>
+
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn operator">-</button>
+
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button class="btn" id="clear">C</button>
+        <button class="btn operator">+</button>
+
+        <button class="btn" id="equals">=</button>
+      </div>
+    </div>
+    <script src="calculator1.js"></script>
+  </body>
+</html>

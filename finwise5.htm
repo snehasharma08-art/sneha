@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-size: large;
+        font-family: Arial, sans-serif;
+      }
+      .mainbox {
+        width: 100%;
+        height: 910px;
+        background-color: rgba(135, 207, 235, 0.212);
+        color: black;
+      }
+      .finnbox {
+        width: 200px;
+        height: 100px;
+        border: none;
+        font-weight: bold;
+        margin-left: 80px;
+        padding-top: 10px;
+      }
+      .features {
+        width: 550px;
+        height: 100px;
+        border: none;
+        margin-left: 590px;
+        padding-top: 40px;
+        padding-left: 20px;
+      }
+      .flex {
+        display: flex;
+      }
+      .yellowbox {
+        width: 220px;
+        height: 30px;
+        border: 1px rgb(255, 153, 0);
+        border-radius: 30px;
+        background-color: rgb(255, 213, 0);
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 40px;
+        margin-top: -10px;
+      }
+      .left {
+        margin-left: 20px;
+      }
+      .largefont {
+        font-size: xx-large;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+      }
+      .lineheight {
+        line-height: 25px;
+      }
+      .applebox {
+        width: 240px;
+        height: 50px;
+        border: 1px black;
+        background-color: black;
+        color: white;
+        border-radius: 35px;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 520px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+      }
+      .googlebox {
+        width: 240px;
+        height: 50px;
+        border: 1px black;
+        background-color: black;
+        color: white;
+        border-radius: 35px;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+      }
+      .smallfont {
+        font-size: x-small;
+      }
+      .mediumfont {
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 600px;
+        margin-top: 90px;
+      }
+      .blue2000 {
+        color: blue;
+      }
+      .sitesflex {
+        display: flex;
+        margin-top: 40px;
+      }
+      .notion {
+        font-weight: bold;
+        font-size: xx-large;
+        color: grey;
+        margin-left: 150px;
+      }
+      .stripe {
+        font-family: Impact, "Arial Narrow Bold", sans-serif;
+        font-weight: bold;
+        color: grey;
+        font-size: xx-large;
+        margin-left: 150px;
+      }
+      .dropbox {
+        font-family: "Franklin Gothic Medium", Arial, sans-serif;
+        font-weight: bold;
+        font-size: xx-large;
+        color: grey;
+        margin-left: 180px;
+      }
+      .shopify {
+        font-style: italic;
+        font-size: xx-large;
+        font-weight: bold;
+        color: grey;
+        margin-left: 180px;
+      }
+      .slack {
+        font-family: sans-serif;
+        font-size: xx-large;
+        font-weight: bold;
+        color: grey;
+        margin-left: 140px;
+      }
+      .margintop {
+        margin-top: 140px;
+        margin-left: 250px;
+      }
+      .smartbox {
+        width: 600px;
+        height: 500px;
+        border: none;
+        margin-top: 280px;
+        padding-left: 40px;
+        margin-left: 50px;
+      }
+      .smartclr {
+        color: rgb(79, 76, 76);
+        font-size: medium;
+      }
+      .iphone2 {
+        float: right;
+        margin-right: 240px;
+        margin-top: 110px;
+      }
+      .seambox {
+        width: 550px;
+        height: 500px;
+        border: none;
+        margin-left: 260px;
+        margin-top: 250px;
+      }
+      .iphone3 {
+        margin-top: 190px;
+        margin-left: 250px;
+      }
+      .bankbox {
+        width: 550px;
+        height: 500px;
+        border: none;
+        margin-left: 720px;
+        margin-top: -600px;
+      }
+      .largeff {
+        font-size: xxx-large;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 160px;
+        margin-bottom: 20px;
+      }
+      .starterbox {
+        width: 400px;
+        height: 600px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        margin-top: 70px;
+        margin-left: 120px;
+      }
+      .halfbox1 {
+        width: 400px;
+        height: 250px;
+        border: 1px solid grey;
+        border-radius: 15px;
+      }
+      .pleft {
+        padding-left: 20px;
+      }
+      .get1 {
+        width: 370px;
+        height: 45px;
+        border: 1px grey;
+        border-radius: 35px;
+        background-color: rgba(128, 128, 128, 0.192);
+        color: black;
+        text-align: center;
+        padding-top: 20px;
+        margin-right: 20px;
+      }
+      .probox {
+        width: 400px;
+        height: 600px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        margin-top: 70px;
+        margin-left: 30px;
+      }
+      .halfbox2 {
+        width: 400px;
+        height: 250px;
+        border: 1px solid grey;
+        border-radius: 15px;
+      }
+      .yellowget {
+        width: 380px;
+        height: 40px;
+        border: 1px yellow;
+        background-color: rgb(255, 230, 0);
+        color: black;
+        border-radius: 35px;
+        text-align: center;
+        padding-top: 20px;
+        margin-left: 10px;
+      }
+      .custom {
+        width: 400px;
+        height: 600px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        margin-top: 70px;
+        margin-left: 30px;
+      }
+      .halfbox3 {
+        width: 400px;
+        height: 250px;
+        border: 1px solid grey;
+        border-radius: 15px;
+      }
+      .color {
+        color: blue;
+      }
+      .get3 {
+        width: 380px;
+        height: 40px;
+        border: 1px grey;
+        background-color: rgba(128, 128, 128, 0.223);
+        border-radius: 35px;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 45px;
+        margin-left: 10px;
+      }
+      .johnbox {
+        width: 380px;
+        height: 250px;
+        border: none;
+        margin-left: 150px;
+        margin-top: 10px;
+        margin-bottom: 140px;
+      }
+      .blue {
+        color: blue;
+        font-size: large;
+        font-weight: bold;
+      }
+      .janebox {
+        width: 380px;
+        height: 250px;
+        border: none;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 140px;
+      }
+      .emilybox {
+        width: 380px;
+        height: 250px;
+        border: none;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 140px;
+      }
+      .smallff {
+        font-size: small;
+      }
+      .margleft {
+        padding-left: 60px;
+      }
+      .topp {
+        padding-top: 20px;
+      }
+      .largefontt {
+        font-size: xxx-large;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .bigblue {
+        color: blue;
+        font-size: xx-large;
+        font-weight: bold;
+        padding-top: 20px;
+      }
+      .marginleft {
+        margin-left: 160px;
+      }
+      .freqbox {
+        width: 750px;
+        height: 500px;
+        border: none;
+        margin-left: 120px;
+        margin-bottom: 40px;
+      }
+      .plusblue {
+        color: blue;
+        font-weight: bold;
+        float: right;
+        font-size: x-large;
+      }
+      .box20m {
+        width: 400px;
+        height: 300px;
+        border: none;
+        margin-top: 80px;
+        margin-left: 120px;
+        margin-bottom: 30px;
+      }
+      .starbox {
+        width: 400px;
+        height: 300px;
+        border: none;
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+      }
+      .globebox {
+        width: 400px;
+        height: 300px;
+        border: none;
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+      }
+      .bigblack {
+        width: 80%;
+        height: 480px;
+        border: 1px black;
+        border-radius: 40px;
+        background-color: rgba(0, 0, 0, 0.812);
+        color: white;
+        text-align: center;
+        margin-left: 170px;
+        margin-bottom: 120px;
+      }
+      .font {
+        font-size: x-large;
+        padding-top: 40px;
+      }
+      .buttonapple {
+        width: 220px;
+        height: 50px;
+        border: 1px black;
+        border-radius: 35px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 360px;
+        margin-top: 40px;
+      }
+      .buttonplay {
+        width: 220px;
+        height: 50px;
+        border: 1px black;
+        border-radius: 35px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-top: 40px;
+      }
+      .last {
+        width: 99%;
+        height: 400px;
+        background-color: rgba(128, 128, 128, 0.137);
+        color: black;
+      }
+      .finbox1 {
+        width: 300px;
+        height: 200px;
+        border: none;
+        margin-left: 140px;
+        padding-top: 20px;
+      }
+      .quicklink {
+        width: 300px;
+        height: 200px;
+        border: none;
+        margin-left: 80px;
+        padding-top: 20px;
+      }
+      .linehh {
+        line-height: 30px;
+      }
+      .contactbox {
+        width: 400px;
+        height: 200px;
+        border: none;
+        margin-left: 120px;
+        padding-top: 20px;
+      }
+      .copybox {
+        width: 370px;
+        height: 200px;
+        border: none;
+        margin-left: 560px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="mainbox">
+      <div class="flex">
+        <div class="finnbox">
+          <h3><i class="fa-solid fa-fingerprint fa-xl"></i>Finwise</h3>
+        </div>
+        <div class="features">
+          <div class="flex">
+            Features
+            <div class="left">Pricing</div>
+            <div class="left">Testimonials</div>
+            <div class="yellowbox">Download</div>
+          </div>
+        </div>
+      </div>
+      <div class="largefont">
+        <h1>
+          Smart,Secure,Simple <br />
+          Financial Management
+        </h1>
+      </div>
+      <div class="center">
+        <div class="lineheight">
+          <p>
+            From effortless budgeting to real- time investment insights,Finwise
+            <br />
+            puts you in control of your money like never before
+          </p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="applebox">
+          <div class="smallfont">Download on the <br /></div>
+          <strong><i class="fa-brands fa-apple fa-2xl"> </i>App Store</strong>
+        </div>
+        <div class="googlebox">
+          <div class="smallfont">GET IT ON <br /></div>
+          <strong
+            ><i class="fa-brands fa-google-play fa-xl"> </i>Google Play</strong
+          >
+        </div>
+      </div>
+      <div class="center">
+        <img
+          src="c:\Users\sneha\Downloads\hero-mockup.webp"
+          width="400px"
+          height="320px"
+        />
+      </div>
+    </div>
+    <div class="mediumfont">
+      <div class="flex">
+        Trusted by
+        <div class="blue2000">2000+</div>
+        customers worldwide
+      </div>
+    </div>
+    <div class="sitesflex">
+      <div class="notion">Notion</div>
+      <div class="stripe">stripe</div>
+      <div class="dropbox"><i class="fa-brands fa-dropbox"></i>Dropbox</div>
+      <div class="shopify"><i class="fa-brands fa-shopify"></i>shopify</div>
+      <div class="slack"><i class="fa-brands fa-slack"></i>slack</div>
+    </div>
+    <div class="flex">
+      <div class="margintop">
+        <img
+          src="c:\Users\sneha\Downloads\mockup-1.webp"
+          width="400px"
+          height="750px"
+        />
+      </div>
+      <div class="smartbox">
+        <h1>Smart Budgeting</h1>
+        <div class="smartclr">
+          <div class="lineheight">
+            Take the guesswork out of managing your money. Our AI-Powered <br />
+            budgeting tool adapts to your lifestyle and helps you stay on track.
+          </div>
+        </div>
+        <h3>
+          <i class="fa-solid fa-chart-simple fa-xl"></i>Intelligent
+          Categorization
+        </h3>
+        <div class="smartclr">
+          Automatically sorts your transactions for crystal-clear insights.
+        </div>
+        <h3>Customizable Goals</h3>
+        <div class="smartclr">
+          Set and track financial objectives that matter to you.
+        </div>
+        <h3>
+          <i class="fa-solid fa-arrow-trend-up fa-xl"></i> Predictive Analysis
+        </h3>
+        <div class="smartclr">
+          Get ahead of your finances with spending forecasts and alerts.
+        </div>
+      </div>
+    </div>
+    <div class="iphone2">
+      <img
+        src="c:\Users\sneha\Downloads\mockup-2.webp"
+        width="400px"
+        height="750px"
+      />
+    </div>
+    <div class="seambox">
+      <h1>Seamless Investing</h1>
+      <div class="smartclr">
+        <div class="lineheight">
+          Start building wealth today,no financial degree required.Finwise
+          <br />
+          makes investing accessible and straightforward.
+        </div>
+      </div>
+      <h3>Micro-Investing</h3>
+      <div class="smartclr">
+        begin with as little as $1 and watch your money grow.
+      </div>
+      <h3>Expert Portfolios</h3>
+      <div class="smartclr">
+        Choose your investment strategies tailored to your risk tolerance.
+      </div>
+      <h3>Real-Time Performance</h3>
+      <div class="smartclr">
+        Track your investments with easy-to-understand metrics and visuals.
+      </div>
+    </div>
+    <div class="iphone3">
+      <img
+        src="c:\Users\sneha\Downloads\mockup-1.webp"
+        width="400px"
+        height="750px"
+      />
+    </div>
+    <div class="bankbox">
+      <h1>Bank-Grade Security</h1>
+      <div class="smartclr">
+        <div class="lineheight">
+          Your financial data deserves the best protection.Rest easy knowing
+          <br />
+          Finwise employs cutting cutting-edge security measures.
+        </div>
+      </div>
+      <h3><i class="fa-solid fa-lock fa-xl"></i>Military-Grade Encryption</h3>
+      <div class="smartclr">
+        Your information is safeguarded with the high level of encryption.
+      </div>
+      <h3><i class="fa-regular fa-user fa-xl"></i> Biometric Authentication</h3>
+      <div class="smartclr">
+        Access your account securely with fingerprint or facial recignition.
+      </div>
+      <h3><i class="fa-solid fa-shield fa-xl"></i>Real-Time Fraud Detection</h3>
+      <div class="smartclr">
+        <div class="lineheight">
+          Our system constantly monitors for suspicious activity to keep your
+          <br />
+          money safe.
+        </div>
+      </div>
+    </div>
+    <div class="largeff">Pricing</div>
+    <div class="center">Simple,transparent pricing.No surprises</div>
+    <div class="flex">
+      <div class="starterbox">
+        <div class="halfbox1">
+          <div class="pleft">
+            <h2>Starter</h2>
+            <div class="flex">
+              <h1>
+                <i
+                  class="fa-solid fa-dollar-sign fa-sm"
+                  style="color: #04132d"
+                ></i
+                >29
+              </h1>
+              <p>/mo</p>
+            </div>
+            <div class="get1">Get Started</div>
+          </div>
+          <div class="pleft">
+            <h4>FEATURES</h4>
+            <div class="smartclr"><p>Everything in basic,plus...</p></div>
+            <div class="smartclr">
+              <p>
+                <i
+                  class="fa-solid fa-circle-check fa-lg"
+                  style="color: #0d63f8"
+                ></i
+                >Basic cloud integration
+              </p>
+              <p>
+                <i
+                  class="fa-solid fa-circle-check fa-lg"
+                  style="color: #0d63f8"
+                ></i
+                >Up to 5 team members
+              </p>
+              <p>
+                <i
+                  class="fa-solid fa-circle-check fa-lg"
+                  style="color: #0d63f8"
+                ></i
+                >20GB storage
+              </p>
+              <p>
+                <i
+                  class="fa-solid fa-circle-check fa-lg"
+                  style="color: #0d63f8"
+                ></i
+                >Email support
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="probox">
+        <div class="halfbox2">
+          <div class="pleft">
+            <h2>Pro</h2>
+            <div class="flex">
+              <h1>
+                <div class="color">
+                  <i
+                    class="fa-solid fa-dollar-sign fa-sm"
+                    style="color: #0962fb"
+                  ></i>
+                  99
+                </div>
+              </h1>
+
+              <p>/mo</p>
+            </div>
+          </div>
+          <div class="yellowget">Get Started</div>
+        </div>
+        <div class="pleft">
+          <h4>FEATURES</h4>
+          <div class="smartclr">
+            <p>Everything in basic,plus...</p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Advanced cloud integration
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Up to 20 ten members
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >100GB storage
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Priority email & phone support
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Advanced analytics
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="custom">
+        <div class="halfbox3">
+          <div class="pleft">
+            <h2>Enterprise</h2>
+            <h1>Custom</h1>
+          </div>
+          <div class="get3">Get Started</div>
+        </div>
+        <div class="pleft">
+          <h4>FEATURES</h4>
+          <div class="smartclr"><p>Everything in basic,plus...</p></div>
+          <div class="smartclr">
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Full cloud integration
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Unlimited team members
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Unlimited storage
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >24/7 dedicated support
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >Custom solutions
+            </p>
+            <p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #0d63f8"
+              ></i
+              >On-site training
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="largeff">What Our Clients Say</div>
+    <div class="center"><p>Here from those who have partnered with us</p></div>
+    <div class="flex">
+      <div class="johnbox">
+        <img
+          src="c:\Users\sneha\Downloads\testimonial-1.webp"
+          width="60px"
+          height="50px"
+        />
+        <div class="margleft">
+          <div class="blue">John Smith</div>
+          <div class="smartclr">
+            <div class="smallff">CEO at Company</div>
+          </div>
+        </div>
+        <div class="topp">
+          <div class="smartclr">
+            <div class="lineheight">
+              <section>
+                "Finwise's AI-driven insights have transformed how we approach
+                financial planning for our clients. It's an invaluable resource
+                in the modern financial landscape."
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="janebox">
+        <img
+          src="c:\Users\sneha\Downloads\testimonial-2 (1).webp"
+          width="60px"
+          height="50px"
+        />
+        <div class="margleft">
+          <div class="blue">Jane Deo</div>
+          <div class="smartclr"><div class="smallff">CTO at Company</div></div>
+        </div>
+        <div class="smartclr">
+          <div class="lineheight">
+            <div class="topp">
+              <section>
+                "As a CTO, I'm impressed by Finwise's robust security measures
+                and seamless integrations. It's rare to find an app that
+                balances user-friendliness with such advanced technology."
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="emilybox">
+        <img
+          src="c:\Users\sneha\Downloads\testimonial-3.webp"
+          width="60px"
+          height="50px"
+        />
+        <div class="margleft">
+          <div class="blue">Emily Johnson</div>
+          <div class="smallff"><div class="smartclr">Product Manager</div></div>
+        </div>
+        <div class="smartclr">
+          <div class="lineheight">
+            <div class="topp">
+              <section>
+                "Finwise is revoluting personal finance management.Its intuitive
+                design and powerful featuresmake it an indispensable tool for
+                anyone serious about financial growth."
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="marginleft">
+        <div class="smartclr">FAQ'S</div>
+        <div class="largefontt">
+          Frequently <br />
+          Asked <br />
+          Questions
+        </div>
+        <div class="smartclr">Ask us anything</div>
+        <div class="bigblue">help@finwise.com</div>
+      </div>
+      <div class="freqbox">
+        <h2>
+          <hr />
+          Is Finwise Secure
+
+          <div class="plusblue">+</div>
+        </h2>
+        <hr />
+        <h2>
+          Can I use Finwise on multiple devices?
+          <div class="plusblue">+</div>
+        </h2>
+        <hr />
+        <h2>
+          Can I connect all my bank accounts?
+          <div class="plusblue">+</div>
+        </h2>
+        <hr />
+        <h2>
+          Do I need any financial expertise to use the investing features?
+          <div class="plusblue">+</div>
+        </h2>
+        <hr />
+        <h2>
+          What if I need help using the app?
+          <div class="plusblue">+</div>
+        </h2>
+        <hr />
+      </div>
+    </div>
+    <div class="flex">
+      <div class="box20m">
+        <h1><i class="fa-solid fa-chart-simple fa-sm"></i>20M+</h1>
+        <div class="lineheight">
+          <div class="smartclr">
+            Transactions processed securely every day,<br />
+            providing real-time insights.
+          </div>
+        </div>
+      </div>
+      <div class="starbox">
+        <h1><i class="fa-solid fa-star"></i>5.0</h1>
+        <div class="lineheight">
+          <div class="smartclr">
+            Star rating,consistently maintained across app <br />stores.
+          </div>
+        </div>
+      </div>
+      <div class="globebox">
+        <h1><i class="fa-solid fa-globe"></i>200+</h1>
+        <div class="lineheight">
+          <div class="smartclr">
+            Financial Institutions,seamlessly integrated,so you <br />
+            can manage all accounts.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bigblack">
+      <div class="font">
+        <h1>Join Over 1 Million Users To <br />Transform Your Finances</h1>
+      </div>
+      <div class="lineheight">
+        <p>
+          Your journey to financial starts here. Download Finwise today
+          <br />and take the first towards a brighter financial future!
+        </p>
+      </div>
+      <div class="flex">
+        <div class="buttonapple">
+          <div class="smallfont">Download on the</div>
+          <strong><i class="fa-brands fa-apple fa-2xl"> </i>App Store</strong>
+        </div>
+        <div class="buttonplay">
+          <div class="smallfont">GET IT ON</div>
+          <strong
+            ><i class="fa-brands fa-google-play fa-xl"></i>Google Play</strong
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="last">
+      <div class="flex">
+        <div class="finbox1">
+          <h3><i class="fa -solid fa-fingerprint fa-xl"></i>Finwise</h3>
+          <div class="lineheight">
+            <div class="smartclr">
+              Empowering businesses with cutting-edge <br />financial technology
+              solutions.
+            </div>
+          </div>
+        </div>
+        <div class="quicklink">
+          <h3>Quick Links</h3>
+          <div class="linehh">
+            <div class="smartclr">
+              Features <br />Pricing <br />Testimonials
+            </div>
+          </div>
+        </div>
+        <div class="contactbox">
+          <h3>Contact us</h3>
+          <div class="lineheight">
+            <div class="smartclr">
+              Email:address@yoursite.com <br />Phone:+1(123) 456-7890 <br />
+              <div class="linehh">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copybox">
+        <div class="linehh">
+          <div class="smartclr">
+            Copyright <i class="fa-regular fa-copyright"></i> 2024 Finwise.All
+            rights reserved. <br />
+            <div class="center">
+              <div class="smallfont">
+                Made with <i class="fa-solid fa-heart fa-xs"></i> by Nexi Launch
+                <br />UI kit by Youthmind
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

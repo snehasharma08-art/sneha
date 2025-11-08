@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-size: large;
+        color: black;
+        font-family: arial, sans-serif;
+      }
+      .mainbox {
+        width: 99%;
+        height: 800px;
+        background-color: rgba(128, 128, 128, 0.118);
+        color: black;
+      }
+      .sites {
+        width: 450px;
+        height: 100px;
+        border: none;
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 90px;
+      }
+      .pleft {
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+      .flex {
+        display: flex;
+      }
+      .weebbox {
+        width: 200px;
+        height: 100px;
+        font-size: xx-large;
+        font-weight: bold;
+        border: none;
+        padding-left: 20px;
+        margin-left: 90px;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .smallfont {
+        font-size: small;
+      }
+      .smartclr {
+        color: grey;
+      }
+      .log {
+        width: 60px;
+        height: 60px;
+        border: none;
+        font-size: medium;
+        font-weight: bold;
+        padding-top: 40px;
+        margin-left: 260px;
+      }
+      .sign {
+        width: 120px;
+        height: 30px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        margin: 30px;
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+      .largefont {
+        font-size: xxx-large;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .blue {
+        width: 250px;
+        height: 30px;
+        background-color: rgba(0, 0, 255, 0.722);
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+        border-radius: 5px;
+        margin-left: 590px;
+        padding-top: 15px;
+      }
+      .img {
+        margin-top: 70px;
+        margin-left: 390px;
+      }
+      .text {
+        text-align: center;
+        font-size: bold;
+        font-family: Arial;
+        margin-top: 60px;
+        font-size: large;
+      }
+      .text2 {
+        font-size: large;
+        font-family: "Franklin Gothic Medium";
+        font-weight: 100;
+        color: rgba(0, 0, 0, 0.758);
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .lineheight {
+        line-height: 30px;
+      }
+      .bluebx1 {
+        width: 180px;
+        height: 30px;
+        border: 1px blue;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 255, 0.641);
+        color: white;
+        text-align: center;
+        margin-left: 510px;
+        font-size: medium;
+        font-weight: bold;
+        padding-top: 10px;
+        margin-bottom: 60px;
+      }
+      .more {
+        width: 200px;
+        height: 30px;
+        border: none;
+        color: rgba(0, 0, 255, 0.727);
+        font-size: medium;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 10px;
+        padding-top: 10px;
+        margin-bottom: 60px;
+      }
+      .text3 {
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      .ggoing {
+        width: 260px;
+        height: 280px;
+        border: none;
+        font-size: medium;
+        text-align: center;
+        font-weight: 100;
+        margin-left: 230px;
+        margin-bottom: 70px;
+      }
+      .getsblue {
+        color: rgba(0, 0, 255, 0.767);
+        font-size: medium;
+        font-weight: bold;
+      }
+      .small {
+        font-size: small;
+        color: rgb(77, 74, 74);
+      }
+      .linehh {
+        line-height: 20px;
+      }
+      .gonline {
+        width: 260px;
+        height: 280px;
+        border: none;
+        font-size: medium;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .gselling {
+        width: 260px;
+        height: 280px;
+        border: none;
+        font-size: medium;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .ggrowing {
+        width: 260px;
+        height: 280px;
+        border: none;
+        font-size: medium;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .weeb {
+        font-family: Arial;
+        font-weight: bolder;
+        font-size: medium;
+        text-align: center;
+        color: rgb(45, 34, 34);
+        margin-bottom: 40px;
+      }
+      .img2 {
+        align-content: center;
+        margin-left: 300px;
+        margin-top: -230px;
+      }
+      .greyclr {
+        color: grey;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-size: small;
+        font-weight: bold;
+        text-align: center;
+      }
+      .img3 {
+        margin-left: 290px;
+      }
+      .darkgrey {
+        color: rgba(0, 0, 0, 0.841);
+        font-weight: bold;
+        font-size: medium;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 120px;
+      }
+      .para {
+        font-size: medium;
+        font-family: "Lucida Sans";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.89);
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+      .lightbox {
+        width: 99%;
+        height: 250px;
+        background-color: rgba(128, 128, 128, 0.181);
+        color: rgba(0, 0, 0, 0.842);
+        text-align: center;
+        padding-top: 80px;
+      }
+      .getstarted {
+        width: 200px;
+        height: 40px;
+        border: 1px blue;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 255, 0.725);
+        text-align: center;
+        margin-top: 50px;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        margin-left: 600px;
+        padding-top: 20px;
+      }
+      .last1 {
+        width: 160px;
+        height: 350px;
+        border: none;
+        font-size: medium;
+        margin-top: 70px;
+        margin-left: 60px;
+        color: black;
+        font-weight: bold;
+        line-height: 30px;
+        padding-left: 100px;
+      }
+      .greyclr2 {
+        color: rgb(105, 100, 100);
+        font-size: medium;
+        margin-right: 120px;
+      }
+      .grey {
+        color: grey;
+        font-size: medium;
+        margin-left: 140px;
+      }
+      .clr {
+        width: 50px;
+        height: 30px;
+        color: rgba(128, 128, 128, 0.541);
+        background-color: rgba(128, 128, 128, 0.181);
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 300px;
+      }
+      .clr2 {
+        width: 50px;
+        height: 30px;
+        color: rgba(128, 128, 128, 0.541);
+        background-color: rgba(128, 128, 128, 0.181);
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 10px;
+      }
+      .clr3 {
+        width: 50px;
+        height: 30px;
+        color: rgba(128, 128, 128, 0.541);
+        background-color: rgba(128, 128, 128, 0.181);
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 10px;
+      }
+      .clr4 {
+        width: 50px;
+        height: 30px;
+        color: rgba(128, 128, 128, 0.541);
+        background-color: rgba(128, 128, 128, 0.181);
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 10px;
+      }
+      .clr5 {
+        width: 50px;
+        height: 30px;
+        color: rgba(128, 128, 128, 0.541);
+        background-color: rgba(128, 128, 128, 0.181);
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 15px;
+        margin-left: 10px;
+      }
+      .english {
+        color: rgb(56, 54, 54);
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 390px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="mainbox">
+      <div class="flex">
+        <div class="sites">
+          <div class="flex">
+            <div class="pleft">Websites</div>
+            <div class="pleft">Online Stores</div>
+            <div class="pleft">Pricing</div>
+            <div class="pleft">More</div>
+          </div>
+        </div>
+        <div class="weebbox">
+          weebly
+          <div class="smartclr">
+            <div class="smallfont">eCommerce by Square</div>
+          </div>
+        </div>
+        <div class="log">Log In</div>
+        <div class="sign">Sign Up</div>
+      </div>
+      <div class="largefont">
+        Build a professional website that grows <br />
+        with your business.
+      </div>
+      <div class="blue">Create Your Website</div>
+      <div class="img">
+        <img
+          src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/website-s.png"
+          width="650px"
+          height="380px"
+        />
+      </div>
+    </div>
+    <div class="text">
+      <h1>Build a free website that <br />grows with your business.</h1>
+    </div>
+    <div class="text2">
+      <div class="lineheight">
+        <h4>
+          Get access to customizable webpage designs and useful tools to <br />
+          build your website and grow your ideal business. Easily build a free
+          <br />
+          website to help you get discovered and grow your customer base in
+          <br />
+          style.Start today with our powerfulfree website builder.
+        </h4>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="bluebx1">Get Started</div>
+      <div class="more">More Designs ></div>
+    </div>
+    <img
+      src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/themes/design-s.png"
+      width="98%"
+      height="350px"
+    />
+    <div class="text3">
+      <h1>
+        Succeed with the right website <br />builder, from start to growth.
+      </h1>
+    </div>
+    <div class="flex">
+      <div class="ggoing">
+        <h3>Get Going</h3>
+        <div class="small">
+          <div class="linehh">
+            <p>
+              Get step-by-step guidance on how <br />
+              to build and lauch a website with <br />expert starter guides and
+              planing <br />tools
+            </p>
+          </div>
+        </div>
+        <div class="getsblue">Get Started ></div>
+      </div>
+      <div class="gonline">
+        <h3>Get Online</h3>
+        <div class="small">
+          <div class="linehh">
+            <p>
+              Get discovered with a professional <br />website. Easily customize
+              with our <br />free website builder.
+            </p>
+          </div>
+        </div>
+        <div class="getsblue">Learn More ></div>
+      </div>
+      <div class="gselling">
+        <h3>Get Selling</h3>
+        <div class="small">
+          <div class="linehh">
+            <p>
+              All-in-one powerful eCommerce <br />tools to simplify order
+              management,<br />shipping, and payments
+            </p>
+          </div>
+          <div class="getsblue">Learn More ></div>
+        </div>
+      </div>
+      <div class="ggrowing">
+        <h3>Get Growing</h3>
+        <div class="small">
+          <div class="linehh">
+            <p>
+              Find new customers with integrated <br />
+              marketing tools,from facebook ads <br />
+              to automated email campaigns.
+            </p>
+          </div>
+        </div>
+        <div class="getsblue">Learn More ></div>
+      </div>
+    </div>
+    <hr />
+    <div class="text3">
+      <h1>
+        Freedom to sell anytime, <br />
+        anywhere Weebly+Square
+      </h1>
+    </div>
+    <div class="weeb">
+      <div class="lineheight">
+        <p>
+          Weebly is now a part of the square product suite.This means never
+          missing a sale and letting <br />
+          your customers pay how they want to.Whether it's at a pop-up shop or
+          your own online store, <br />
+          Square takes care of your payments for you, so you can focus on your
+          business.
+        </p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="bluebx1">Sign Up</div>
+      <div class="more">Learn More ></div>
+    </div>
+    <img
+      src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/square-and-weebly/store-front-1680.webp"
+      width="98%"
+      height="530px"
+    />
+    <div class="img2">
+      <img
+        src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/square-and-weebly/browser-479.png"
+        width="750px"
+        height="600px"
+      />
+    </div>
+    <div class="greyclr"><p>IT'S YOUR BUSINESS.YOU'VE GOT THIS</p></div>
+    <div class="text3">
+      <h1>
+        We're here to guide you through <br />
+        common hurdles when you need it.
+      </h1>
+    </div>
+    <div class="img3">
+      <img
+        src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/business-community/makers-to-merchants-479.jpg"
+        width="990px"
+        height="500px"
+      />
+    </div>
+    <div class="darkgrey">
+      Join our in-person events with a community of like-minded <br />
+      entrepreneurs to share,connect and learn.
+    </div>
+    <hr />
+    <div class="text3"><h3>Build your website,build your success.</h3></div>
+    <div class="para">
+      <div class="lineheight">
+        From tech hurdles big and small to business growth tips,help from our
+        <br />
+        Customer Success team is just an email,chat or phone call away. Begin
+        <br />
+        with Weebly's free website builder and lean on us for help along the
+        way.
+      </div>
+    </div>
+    <img
+      src="https://cdn2.editmysite.com/images/landing-pages/global/home-com-forward/customer-success/customer-success-479.png"
+      width="99%"
+      height="450px"
+    />
+    <div class="lightbox">
+      <h1>Grow your business,anytime,anywhere.</h1>
+      <div class="getstarted">Get Started</div>
+    </div>
+    <div class="flex">
+      <div class="last1">
+        <div class="greyclr2">Product</div>
+        Websites <br />
+        Online Stores <br />
+        Photo Studio <br />
+        Features <br />
+        Themes <br />
+        Pricing <br />
+        App center <br />
+        Mobile Apps
+      </div>
+      <div class="last1">
+        <div class="greyclr2">Resources</div>
+        Blog <br />
+        Success Stories <br />
+        Developer Docs <br />
+        Affiliates
+      </div>
+      <div class="last1">
+        <div class="greyclr2">Support</div>
+        Support Center <br />
+        Community
+      </div>
+      <div class="last1">
+        <div class="greyclr2">Company</div>
+        About <br />Careers <br />
+        Press <br />
+        Contact <br />
+        Terms <br />
+        Privacy Policy <br />
+        Additional California Privacy Disclosure
+      </div>
+    </div>
+    <div class="flex">
+      <div class="grey">
+        <p><i class="fa-regular fa-copyright fa-sm"></i>2025 Square,Inc</p>
+      </div>
+      <div class="clr">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="clr2"><i class="fa-brands fa-twitter fa-lg"></i></div>
+      <div class="clr3"><i class="fa-brands fa-youtube fa-lg"></i></div>
+      <div class="clr4"><i class="fa-brands fa-instagram fa-lg"></i></div>
+      <div class="clr5"><i class="fa-brands fa-google-plus-g"></i></div>
+      <div class="english"><p>English ^</p></div>
+    </div>
+  </body>
+</html>
